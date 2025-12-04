@@ -22,6 +22,7 @@ function createCard(item) {
   card.appendChild(txt);
 
   card.addEventListener('dragstart', (e) => {
+    console.log("Dragging card", item.id, item.category);
     e.dataTransfer.setData('application/json', JSON.stringify({ id: item.id, category: item.category }));
     e.dataTransfer.effectAllowed = 'move';
   });
@@ -36,6 +37,7 @@ function setupDropzone(dropZone) {
     try {
       // parse dragged data
       const data = JSON.parse(e.dataTransfer.getData('application/json') || '{}');
+      console.log("Dragover:", data, "Dropzone accepts:", dropZone.dataset.accept);
       if (data.category === dropZone.dataset.accept) {
         dropZone.classList.add('correct-hover');
         dropZone.classList.remove('incorrect-hover');
@@ -98,5 +100,3 @@ async function init() {
 // ensure DOM is loaded before init runs
 document.addEventListener('DOMContentLoaded', init);
 
-const data = JSON.parse(e.dataTransfer.getData('application/json') || '{}');
-console.log(data, dropZone.dataset.accept); // Confirm values
