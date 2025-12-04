@@ -97,3 +97,6 @@ async function init() {
 }
 // ensure DOM is loaded before init runs
 document.addEventListener('DOMContentLoaded', init);
+
+const data = JSON.parse(e.dataTransfer.getData('application/json') || '{}');
+console.log(data, dropZone.dataset.accept); // Confirm values
