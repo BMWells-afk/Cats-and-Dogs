@@ -3,11 +3,11 @@
 ## Project Description
 A simple drag and drop app that includes a 5 cat and 5 dog images, stored locally
 - You can drag all the pet items.
-- Categories are labeled on each so they show green (correct) and allow for drop if you drag over their respective category zones. or red (incorrect) and should throw an error and NOT let you drop in that zone.
+- Categories are labeled on each so they show green (correct) and allow for drop if you drag over their respective category zones. or red (incorrect) and should NOT let you drop in that zone.
 - I added some new CSS styles to help with the img formatting because I like my rounded borders, played around a bit much and might have some redundant styles
 
 ## How to run this app
-- Run in VS Code preview or local host http://127.0.0.1:3000/index.html
+- https://bmwells-afk.github.io/Cats-and-Dogs/
 
 
 ## Project Contents
