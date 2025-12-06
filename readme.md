@@ -7,6 +7,9 @@ A simple drag and drop app that includes a 5 cat and 5 dog images, stored locall
 - I added some new CSS styles to help with the img formatting because I like my rounded borders
 -Tried some new CSS styles
 
+## Issues
+- The hover "correct" does not turn green as it should
+
 ## How to run this app
 - https://bmwells-afk.github.io/Cats-and-Dogs/
 
