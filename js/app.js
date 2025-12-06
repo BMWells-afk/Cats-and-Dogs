@@ -11,7 +11,7 @@ function createCard(item) {
   card.dataset.category = item.category;
 
   const img = document.createElement('img');
-  img.src = `./images/${item.image_url}`;
+  img.src = `./images/${item.image_url}`; // updated for github pages
   img.alt = item.name;
  
   const txt = document.createElement('div');
